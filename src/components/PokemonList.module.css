@@ -1,4 +1,8 @@
 .pokemonList {
-  margin: 20px;
-  margin-top: 40px;
+  margin: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
 }
