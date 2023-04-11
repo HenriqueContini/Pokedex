@@ -7,4 +7,5 @@
 .header h1 {
   color: var(--white);
   font-size: 2rem;
+  font-weight: bold;
 }
