@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import style from './PokemonCard.module.css'
 
-interface Pokemon {
+interface propsPokemon {
   name: string
   url: string
 }
 
-const PokemonCard = ({name, url}: Pokemon) => {
+const PokemonCard = ({name, url}: propsPokemon) => {
   const [image, setImage] = useState<string>()
 
   useEffect(() => {
