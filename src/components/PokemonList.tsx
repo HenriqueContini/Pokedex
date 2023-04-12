@@ -9,22 +9,40 @@ interface JsonTypes {
 
 const PokemonList = () => {
   const [pokemon, setPokemon] = useState<JsonTypes[]>([])
-  const [nextURL, setNextURL] = useState<string>()
+  const [URL, setURL] = useState<string>('https://pokeapi.co/api/v2/pokemon?limit=40')
+  const [isAtBottom, setIsAtBottom] = useState<boolean>(false)
+  const root = document.getElementById('root')!;
 
   useEffect(() => {
-    loadPokemonList()
+    loadPokemonList(URL)
+
+    if(pokemon) {
+      window.addEventListener("scroll", () => {
+        if(window.scrollY >= (root.scrollHeight - window.innerHeight)) {
+          setIsAtBottom(true)
+        }
+      })
+    }
   }, [])
 
-  async function loadPokemonList() {
-    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=100')
+  useEffect(() => {
+    if(isAtBottom) {
+      console.log('Funfou')
+      loadPokemonList(URL)
+    }
+  }, [isAtBottom])
+
+  async function loadPokemonList(url: string) {
+    const res = await fetch(url)
     const data = await res.json()
 
-    setNextURL(data.next)
+    setURL(data.next)
     setPokemon([...pokemon, ...data.results])
+    setIsAtBottom(false)
   }
 
   return (
-    <section className={style.pokemonList}>
+    <section className={style.pokemonList} id='pokemonList'>
       {pokemon ? pokemon.map((p: {name: string, url: string}, index: number) => <PokemonCard key={index + 1} name={p.name} url={p.url}/>) : null}
     </section>
   )
