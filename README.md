@@ -19,3 +19,4 @@ A Pokédex tem o objetivo de exibir os mais diversos Pokemons. Para realizá-la 
 
 ![Desktop version](https://user-images.githubusercontent.com/81761545/231555556-550b6a9f-9194-4ade-b3dc-939e464cefc4.png)
 ![Mobile version](https://user-images.githubusercontent.com/81761545/231555689-3b8b2ccf-6726-45ee-a7a3-eb71354cd02e.png)
+![Mobile version 2](https://user-images.githubusercontent.com/81761545/231556461-f63ad6fe-ce05-4836-afc5-da8292e7aa1d.png)
