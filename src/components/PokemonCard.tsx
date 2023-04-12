@@ -1,10 +1,29 @@
+import { useEffect, useState } from 'react'
 import style from './PokemonCard.module.css'
 
-const PokemonCard = () => {
+interface Pokemon {
+  name: string
+  url: string
+}
+
+const PokemonCard = ({name, url}: Pokemon) => {
+  const [image, setImage] = useState<string>()
+
+  useEffect(() => {
+    getImage()
+  })
+
+  async function getImage() {
+    const res = await fetch(url)
+    const data = await res.json()
+
+    setImage(data.sprites.other['official-artwork'].front_default)
+  }
+  
   return (
     <div className={style.pokemonCard}>
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png" alt="Imagem Ditto" />
-      <p>Ditto</p>
+      <img src={image} alt={`Imagem do ${name}`} />
+      <p>{name}</p>
     </div>
   )
 }
