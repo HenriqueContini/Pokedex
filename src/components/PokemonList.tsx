@@ -9,7 +9,7 @@ interface JsonTypes {
 
 const PokemonList = () => {
   const [pokemon, setPokemon] = useState<JsonTypes[]>([])
-  const [URL, setURL] = useState<string>('https://pokeapi.co/api/v2/pokemon?limit=40')
+  const [URL, setURL] = useState<string>('https://pokeapi.co/api/v2/pokemon?limit=50')
   const [isAtBottom, setIsAtBottom] = useState<boolean>(false)
   const root = document.getElementById('root')!;
 

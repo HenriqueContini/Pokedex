@@ -18,3 +18,17 @@
   font-size: 1.25rem;
   text-transform: capitalize;
 }
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  animation: loading 4s linear infinite;
+}
