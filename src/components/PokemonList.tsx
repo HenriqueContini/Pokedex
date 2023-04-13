@@ -27,7 +27,6 @@ const PokemonList = () => {
 
   useEffect(() => {
     if(isAtBottom) {
-      console.log('Funfou')
       loadPokemonList(URL)
     }
   }, [isAtBottom])

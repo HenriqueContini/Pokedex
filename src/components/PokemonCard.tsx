@@ -18,7 +18,7 @@ const PokemonCard = ({ name, url }: propsPokemon) => {
     const res = await fetch(url)
     const data = await res.json()
 
-    setImage(data.sprites.other['official-artwork'].front_default)
+    setImage(data.sprites.front_default)
   }
 
   return (

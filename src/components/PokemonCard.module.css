@@ -4,13 +4,9 @@
   align-items: center;
   padding: 10px;
   background-color: var(--light-background);
-  max-width: 150px;
+  width: 150px;
   gap: 10px;
   border-radius: 10px;
-}
-
-.pokemonCard img {
-  width: 100%;
 }
 
 .pokemonCard p {
