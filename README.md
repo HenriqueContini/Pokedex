@@ -4,6 +4,10 @@
   <img src="https://raw.githubusercontent.com/HenriqueContini/Pokedex/main/public/favicon.png" width="30px"/> 
 </h1>
 
+### 🖥️ Site
+
+Para visualizar o site: <a href="https://pokedex-g9snp9f4r-henriquecontini.vercel.app/">Clique aqui</a>
+
 ### 📝 Descrição
 A Pokédex tem o objetivo de exibir os mais diversos Pokemons. Para realizá-la foi utilizado React com TypeScript e a <a href="https://pokeapi.co/">PokeAPI</a>.
 
