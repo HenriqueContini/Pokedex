@@ -4,6 +4,10 @@
   <img src="https://raw.githubusercontent.com/HenriqueContini/Pokedex/main/public/favicon.png" width="30px"/> 
 </h1>
 
+### 🖥️ Site
+
+Para visualizar o site: <a href="https://pokedex-g9snp9f4r-henriquecontini.vercel.app/">Clique aqui</a>
+
 ### 📝 Descrição
 A Pokédex tem o objetivo de exibir os mais diversos Pokemons. Para realizá-la foi utilizado React com TypeScript e a <a href="https://pokeapi.co/">PokeAPI</a>.
 
@@ -17,6 +21,8 @@ A Pokédex tem o objetivo de exibir os mais diversos Pokemons. Para realizá-la 
 
 ### 🖼️ Screenshots
 
-![Desktop version](https://user-images.githubusercontent.com/81761545/231555556-550b6a9f-9194-4ade-b3dc-939e464cefc4.png)
-![Mobile version](https://user-images.githubusercontent.com/81761545/231555689-3b8b2ccf-6726-45ee-a7a3-eb71354cd02e.png)
-![Mobile version 2](https://user-images.githubusercontent.com/81761545/231556461-f63ad6fe-ce05-4836-afc5-da8292e7aa1d.png)
+![Imagem versão desktop](https://user-images.githubusercontent.com/81761545/231771705-6ebbb7ce-977d-4058-a599-a60e9d94419a.png)
+
+
+![Imagem versão mobile](https://user-images.githubusercontent.com/81761545/231771916-7cdea2ca-a72c-4c47-aaf7-efed55754d0f.png)
+![Imagem versão mobile 2](https://user-images.githubusercontent.com/81761545/231772125-a7b21bfd-a611-4114-9790-85fd879f7f76.png)
